@@ -37,7 +37,7 @@ class LogUtil {
   }
 
   static void _printLog(String? tag, String stag, Object? object) {
-    String str = object.toString() ?? "null";
+    String str = object.toString();
     tag = tag ?? _defTag;
     if (str.length <= _maxLen) {
       print('$tag$stag $str');
